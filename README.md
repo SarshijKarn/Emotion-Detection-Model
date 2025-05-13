@@ -9,7 +9,9 @@
    python -m venv venv
    venv\Scripts\activate
    pip install -r requirements.txt
+    (dont use )                                  Remove-Item -Recurse -Force .\venv
 
+ 
 ### Train the Model
 download it from here:  https://www.kaggle.com/datasets/msambare/fer2013
 
@@ -22,5 +24,7 @@ After training, the model will be saved as **`emotion_model.h5`**.
 ### Run Real-Time Emotion Detection
 Start the webcam-based emotion detection system:
 
+
 python main.py
+
 Press **`q`** to exit the webcam feed.
